@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <section
+        class="h-screen content-center bg-[url(https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg)] bg-cover bg-center bg-blue-400" id="main">
+        <div class="bg-white flex flex-col m-auto w-fit items-center p-16 rounded-xl">
+            <span class="text-7xl font-bold text-blue-950">Modal Project</span>
+            <button type="button" id="modal-btn"
+                class="bg-blue-500 text-white mt-10 font-medium py-1 shadow-lg px-3 rounded-md transition-all hover:-translate-y-1 hover:border-blue-600 hover:border hover:bg-white hover:text-blue-600">Open
+                Modal</button>
+        </div>
+    </section>
+    <section class="flex justify-center z-10 hidden" id="modal-content">
+        <div class="bg-white rounded-lg fixed w-fit flex flex-col py-8 px-10 top-56">
+            <button type="button" class="flex justify-end text-red-600 text-2xl transition-all animate-bounce hover:animate-none hover:transition-all" id="cancel-btn"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="text-center px-20 pt-10 pb-14 text-5xl font-bold">Modal Content</div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
